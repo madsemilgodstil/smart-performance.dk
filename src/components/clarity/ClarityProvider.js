@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import Clarity from 'clarity-js'
+import Clarity from '@microsoft/clarity'
 
 export default function ClarityProvider () {
   useEffect(() => {
