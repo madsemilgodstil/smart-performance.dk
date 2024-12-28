@@ -1,10 +1,7 @@
-'use client'
-
-import { useEffect } from 'react'
-import Clarity from 'clarity-js'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/footer/Footer'
+import ClarityProvider from '@/components/clarity/ClarityProvider'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -22,16 +19,12 @@ export const metadata = {
 }
 
 export default function RootLayout ({ children }) {
-  useEffect(() => {
-    const projectId = 'pl5x63xp77'
-    Clarity.init(projectId)
-  }, [])
-
   return (
     <html lang='en' className='dark'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <ClarityProvider />
         {children}
         <Footer />
       </body>
