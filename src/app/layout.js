@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import Clarity from 'clarity-js' // Import Clarity SDK
+import Clarity from 'clarity-js'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import Footer from '@/components/footer/Footer'
@@ -23,8 +23,7 @@ export const metadata = {
 
 export default function RootLayout ({ children }) {
   useEffect(() => {
-    // Initialize Clarity with your project ID
-    const projectId = 'pl5x63xp77' // Replace "yourProjectId" with your actual Clarity project ID
+    const projectId = 'pl5x63xp77'
     Clarity.init(projectId)
   }, [])
 
