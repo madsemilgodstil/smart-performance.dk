@@ -21,12 +21,10 @@ export default function Footer() {
             <h2 className="text-lg font-semibold text-white">Contact Us</h2>
             <ul className="mt-2 space-y-2">
               <li>
-                <span className="block">📞 Phone: 0045 50701347</span>
+                <span className="block">📞 Phone: 0045 xxxxxxxx</span>
               </li>
               <li>
-                <span className="block">
-                  ✉️ Email: info@smartperformance.dk
-                </span>
+                <span className="block">✉️ Email: mh@mheitmann.dk</span>
               </li>
               <li>
                 <span className="block">📍 Address: Lundevej 4, Hove</span>
