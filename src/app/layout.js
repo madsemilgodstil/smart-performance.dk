@@ -38,6 +38,23 @@ export default function RootLayout ({ children }) {
           `
         }}
       />
+      {/* Google Analytics Script */}
+      <Script
+        src='https://www.googletagmanager.com/gtag/js?id=G-SN3S65KSFN'
+        strategy='afterInteractive'
+      />
+      <Script
+        id='google-analytics'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SN3S65KSFN');
+          `
+        }}
+      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
